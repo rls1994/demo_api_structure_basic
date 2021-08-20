@@ -28,7 +28,7 @@ router.put('/', adminHandler.addAdmin)
 router.post("/login", adminHandler.adminLogin);
 
 //if logged in
-router.get('/profile', check_auth, adminHandler.adminProfile)
+router.get('/', check_auth, adminHandler.adminProfile)
 //if logged in
 router.patch('/changePassword', check_auth, adminHandler.changeAdminPassword)
 //if logged in
